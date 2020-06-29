@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/mystyle.css">
+</head>
+<body>
+
+<table>
+<tr><td align=center>
+<div>
+<h1><a href="http://pacificstore.com"> Home</a> - My Todo List</h1>
+
+<form action="/todo/task" method="post">
+    <p><input type="text" placeholder="What do you need to do?" name="content"></p>
+    <input type="submit" value="Add Task">
+</form>
+</div>
+</td></tr>
+
+<tr><td>
+<div>
+<ol>
+{% for task in tasks %}
+      <table border=0>
+	 <tr><td width=710>    
+    <li>
+        {% if task.done %} <strike>{% endif %}{{ task.content }}{% if task.done %}</strike>{% endif %}
+        </td><td width=10>
+        <a href="/todo/done/{{ task.id }}"> X</a>
+	</td><td width=10>
+        <a href="/todo/delete/{{ task.id }}"> Delete</a>
+    </li>
+	</td>
+      </table>
+{% endfor %}
+</ol>
+</td></tr>
+</div>
+</table>
+
+</body>
+</html>

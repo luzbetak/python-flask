@@ -1,0 +1,10 @@
+examples/
+__pycache__/
+.ssh/
+.bash*
+.gitconfig
+.gitrc
+.viminfo
+venv/
+.local/
+
