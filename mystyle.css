@@ -34,13 +34,13 @@ a:active {
 }
 
 input {
-  width: 800px;
+  width: 1200px;
   font-family: "Lucida Console", Courier, monospace;
-  font-size: 150%;
+  font-size: 110%;
 }
 
 input[type=text], select {
-  width: 900px;
+  width: 1200px;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -48,11 +48,11 @@ input[type=text], select {
   border-radius: 4px;
   box-sizing: border-box;
   font-family: "Lucida Console", Courier, monospace;
-  font-size: 150%;
+  font-size: 110%;
 }
 
 input[type=submit] {
-  width: 900px;
+  width: 1200px;
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -61,7 +61,7 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   font-family: "Lucida Console", Courier, monospace;
-  font-size: 150%;
+  font-size: 110%;
 }
 
 input[type=submit]:hover {
@@ -73,6 +73,6 @@ div {
   background-color: #f2f2f2;
   padding: 20px;
   font-family: "Lucida Console", Courier, monospace;
-  font-size: 150%;
+  font-size: 110%;
 }
 </style>

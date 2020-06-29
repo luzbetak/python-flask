@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<table>
+<table width=1200 border=0>
 <tr><td align=center>
 <div>
 <h1><a href="http://pacificstore.com"> Home</a> - My Todo List</h1>
@@ -21,8 +21,8 @@
 <div>
 <ol>
 {% for task in tasks %}
-      <table border=0>
-	 <tr><td width=710>    
+<table width=1200 border=0>
+ <tr><td>    
     <li>
         {% if task.done %} <strike>{% endif %}{{ task.content }}{% if task.done %}</strike>{% endif %}
         </td><td width=10>
@@ -30,8 +30,8 @@
 	</td><td width=10>
         <a href="/todo/delete/{{ task.id }}"> Delete</a>
     </li>
-	</td>
-      </table>
+</td></tr>
+</table>
 {% endfor %}
 </ol>
 </td></tr>
